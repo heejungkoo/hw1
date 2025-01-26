@@ -277,7 +277,7 @@ INSERT INTO roles (
 
 -- The SQL statement for the movies output
 -- TODO!
-SELECT title, year, rating, studios.name
+SELECT movies.title, movies.year, movies.rating, studios.name
 FROM movies
 INNER JOIN studios ON movies.studio_id = studios.id;
 
